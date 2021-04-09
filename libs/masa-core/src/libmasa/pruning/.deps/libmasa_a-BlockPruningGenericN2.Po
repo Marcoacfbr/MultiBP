@@ -1,0 +1,69 @@
+src/libmasa/pruning/libmasa_a-BlockPruningGenericN2.o: \
+ src/libmasa/pruning/BlockPruningGenericN2.cpp /usr/include/stdc-predef.h \
+ src/libmasa/pruning/BlockPruningGenericN2.hpp \
+ src/libmasa/pruning/AbstractBlockPruning.hpp \
+ src/libmasa/pruning/../libmasaTypes.hpp src/libmasa/pruning/../Grid.hpp \
+ /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h src/libmasa/pruning/../Partition.hpp \
+ src/libmasa/pruning/../IManager.hpp \
+ src/libmasa/pruning/../libmasaTypes.hpp /usr/include/string.h \
+ /usr/include/xlocale.h
+
+/usr/include/stdc-predef.h:
+
+src/libmasa/pruning/BlockPruningGenericN2.hpp:
+
+src/libmasa/pruning/AbstractBlockPruning.hpp:
+
+src/libmasa/pruning/../libmasaTypes.hpp:
+
+src/libmasa/pruning/../Grid.hpp:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+src/libmasa/pruning/../Partition.hpp:
+
+src/libmasa/pruning/../IManager.hpp:
+
+src/libmasa/pruning/../libmasaTypes.hpp:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:

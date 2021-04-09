@@ -1,0 +1,33 @@
+src/common/io/libmasa_a-DummyCellsWriter.o: \
+ src/common/io/DummyCellsWriter.cpp /usr/include/stdc-predef.h \
+ src/common/io/DummyCellsWriter.hpp src/common/io/CellsWriter.hpp \
+ src/common/io/../../libmasa/libmasaTypes.hpp /usr/include/string.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stddef.h \
+ /usr/include/xlocale.h
+
+/usr/include/stdc-predef.h:
+
+src/common/io/DummyCellsWriter.hpp:
+
+src/common/io/CellsWriter.hpp:
+
+src/common/io/../../libmasa/libmasaTypes.hpp:
+
+/usr/include/string.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stddef.h:
+
+/usr/include/xlocale.h:

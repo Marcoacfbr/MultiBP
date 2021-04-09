@@ -1,0 +1,65 @@
+src/common/io/libmasa_a-InitialCellsReader.o: \
+ src/common/io/InitialCellsReader.cpp /usr/include/stdc-predef.h \
+ src/common/io/InitialCellsReader.hpp \
+ src/common/io/SeekableCellsReader.hpp src/common/io/CellsReader.hpp \
+ src/common/io/../../libmasa/libmasaTypes.hpp \
+ src/common/io/../../libmasa/IManager.hpp \
+ src/common/io/../../libmasa/libmasaTypes.hpp \
+ src/common/io/../../libmasa/Partition.hpp /usr/include/stdio.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h
+
+/usr/include/stdc-predef.h:
+
+src/common/io/InitialCellsReader.hpp:
+
+src/common/io/SeekableCellsReader.hpp:
+
+src/common/io/CellsReader.hpp:
+
+src/common/io/../../libmasa/libmasaTypes.hpp:
+
+src/common/io/../../libmasa/IManager.hpp:
+
+src/common/io/../../libmasa/libmasaTypes.hpp:
+
+src/common/io/../../libmasa/Partition.hpp:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:

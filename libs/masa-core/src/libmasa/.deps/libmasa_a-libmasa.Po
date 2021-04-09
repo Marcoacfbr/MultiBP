@@ -1,0 +1,813 @@
+src/libmasa/libmasa_a-libmasa.o: src/libmasa/libmasa.cpp \
+ /usr/include/stdc-predef.h src/libmasa/libmasa.hpp \
+ src/libmasa/libmasaTypes.hpp src/libmasa/IManager.hpp \
+ src/libmasa/Partition.hpp src/libmasa/IAligner.hpp /usr/include/string.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stddef.h \
+ /usr/include/xlocale.h /usr/include/stdio.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h \
+ src/libmasa/parameters/AbstractAlignerParameters.hpp \
+ /usr/include/getopt.h src/libmasa/parameters/../IAlignerParameter.hpp \
+ src/libmasa/capabilities.hpp src/libmasa/Grid.hpp \
+ src/libmasa/IAlignerParameter.hpp \
+ src/libmasa/aligners/AbstractAligner.hpp \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/string \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stringfwd.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/memoryfwd.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/char_traits.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_algobase.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/functexcept.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/exception_defines.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/cpp_type_traits.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/ext/type_traits.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/ext/numeric_traits.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_pair.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/move.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/concept_check.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/type_traits \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_iterator_base_types.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_iterator_base_funcs.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/debug/assertions.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_iterator.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/ptr_traits.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/debug/debug.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/predefined_ops.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/postypes.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/cwchar \
+ /usr/include/bits/wchar.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/cstdint \
+ /storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stdint.h \
+ /usr/include/stdint.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/allocator.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/c++allocator.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/ext/new_allocator.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/new \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/exception \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/exception.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/exception_ptr.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/cxxabi_init_exception.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/typeinfo \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/hash_bytes.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/nested_exception.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/localefwd.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/c++locale.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/iosfwd \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/cctype /usr/include/ctype.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/ostream_insert.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/cxxabi_forced.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_function.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/backward/binders.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/range_access.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/initializer_list \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/basic_string.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/ext/atomicity.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/gthr.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/timex.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/setjmp.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/atomic_word.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/ext/alloc_traits.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/alloc_traits.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/ext/string_conversions.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/cstdlib \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/std_abs.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/cstdio \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/cerrno /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/functional_hash.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/basic_string.tcc \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/map \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_tree.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/ext/aligned_buffer.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_map.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/tuple \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/utility \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_relops.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/array \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/stdexcept \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/uses_allocator.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/invoke.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_multimap.h \
+ src/libmasa/aligners/../IManager.hpp \
+ src/libmasa/aligners/../Partition.hpp \
+ src/libmasa/aligners/../IAligner.hpp src/libmasa/aligners/../Grid.hpp \
+ src/libmasa/aligners/../pruning/AbstractBlockPruning.hpp \
+ src/libmasa/aligners/../pruning/../libmasaTypes.hpp \
+ src/libmasa/aligners/../pruning/../Grid.hpp \
+ src/libmasa/aligners/../pruning/../IManager.hpp \
+ src/libmasa/aligners/AbstractBlockAligner.hpp \
+ src/libmasa/aligners/AbstractAligner.hpp \
+ src/libmasa/aligners/../parameters/BlockAlignerParameters.hpp \
+ src/libmasa/aligners/../parameters/AbstractAlignerParameters.hpp \
+ src/libmasa/aligners/../processors/AbstractBlockProcessor.hpp \
+ src/libmasa/aligners/../processors/../libmasaTypes.hpp \
+ src/libmasa/aligners/../pruning/BlockPruningGenericN2.hpp \
+ src/libmasa/aligners/../pruning/AbstractBlockPruning.hpp \
+ src/libmasa/aligners/AbstractDiagonalAligner.hpp \
+ src/libmasa/aligners/../libmasa.hpp \
+ src/libmasa/aligners/../pruning/BlockPruningDiagonal.hpp \
+ src/libmasa/aligners/AbstractAlignerSafe.hpp \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/queue \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/deque \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_construct.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_uninitialized.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_deque.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/deque.tcc \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/vector \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_vector.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_bvector.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/vector.tcc \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_heap.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_queue.h \
+ src/libmasa/processors/AbstractBlockProcessor.hpp \
+ src/libmasa/processors/CPUBlockProcessor.hpp \
+ src/libmasa/processors/AbstractBlockProcessor.hpp \
+ src/libmasa/processors/../libmasa.hpp src/libmasa/utils/AlignerUtils.hpp \
+ src/libmasa/utils/../libmasa.hpp \
+ src/libmasa/pruning/AbstractBlockPruning.hpp \
+ src/libmasa/pruning/BlockPruningDiagonal.hpp \
+ src/libmasa/pruning/BlockPruningGenericN2.hpp \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/stdlib.h \
+ /usr/include/sys/wait.h /usr/include/signal.h /usr/include/bits/signum.h \
+ /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigthread.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ src/libmasa/../common/Common.hpp \
+ src/libmasa/../common/exceptions/exceptions.hpp \
+ src/libmasa/../common/exceptions/IllegalArgumentException.hpp \
+ src/libmasa/../common/AlignerManager.hpp \
+ src/libmasa/../common/../libmasa/libmasa.hpp \
+ src/libmasa/../common/biology/Sequence.hpp \
+ src/libmasa/../common/biology/Constants.hpp \
+ src/libmasa/../common/biology/SequenceInfo.hpp \
+ src/libmasa/../common/biology/SequenceData.hpp \
+ src/libmasa/../common/biology/SequenceModifiers.hpp \
+ src/libmasa/../common/io/CellsReader.hpp \
+ src/libmasa/../common/io/../../libmasa/libmasaTypes.hpp \
+ src/libmasa/../common/io/../../libmasa/IManager.hpp \
+ src/libmasa/../common/io/CellsWriter.hpp \
+ src/libmasa/../common/sra/SpecialRowsPartition.hpp \
+ src/libmasa/../common/sra/SpecialRow.hpp \
+ src/libmasa/../common/sra/../io/SeekableCellsReader.hpp \
+ src/libmasa/../common/sra/../io/CellsReader.hpp \
+ src/libmasa/../common/sra/../io/CellsWriter.hpp \
+ src/libmasa/../common/sra/../../libmasa/libmasa.hpp \
+ src/libmasa/../common/sra/FirstRow.hpp \
+ src/libmasa/../common/BlocksFile.hpp \
+ src/libmasa/../common/../libmasa/Grid.hpp \
+ src/libmasa/../common/BestScoreList.hpp \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/set \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_set.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_multiset.h \
+ src/libmasa/../common/Job.hpp src/libmasa/../common/SpecialRowReader.hpp \
+ src/libmasa/../common/SpecialRowWriter.hpp \
+ src/libmasa/../common/CrosspointsFile.hpp \
+ src/libmasa/../common/Crosspoint.hpp \
+ src/libmasa/../common/biology/Alignment.hpp \
+ src/libmasa/../common/biology/AlignmentParams.hpp \
+ src/libmasa/../common/biology/Sequence.hpp \
+ src/libmasa/../common/biology/biology.hpp \
+ src/libmasa/../common/biology/Alignment.hpp \
+ src/libmasa/../common/biology/AlignmentBinaryFile.hpp \
+ src/libmasa/../common/sra/SpecialRowsArea.hpp \
+ src/libmasa/../common/sra/SpecialRowsPartition.hpp \
+ src/libmasa/../common/configs/Configs.hpp \
+ src/libmasa/../common/configs/ConfigParser.hpp \
+ src/libmasa/../common/AlignerPool.hpp \
+ src/libmasa/../common/../libmasa/libmasaTypes.hpp \
+ src/libmasa/../common/Timer.hpp /usr/include/sys/time.h \
+ src/libmasa/../common/RecurrentTimer.hpp \
+ src/libmasa/../common/Status.hpp src/libmasa/../common/macros.hpp \
+ src/libmasa/../common/sra/sra.hpp \
+ src/libmasa/../common/sra/SpecialRowsArea.hpp \
+ src/libmasa/../common/utils.hpp src/libmasa/../stage1/sw_stage1.h \
+ src/libmasa/../stage2/sw_stage2.h src/libmasa/../stage3/sw_stage3.h \
+ src/libmasa/../stage4/sw_stage4.h src/libmasa/../stage5/sw_stage5.h \
+ src/libmasa/../stage6/sw_stage6.h src/libmasa/../masanet/MasaNet.hpp \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/sstream \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/istream \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/ios \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/ios_base.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/locale_classes.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/locale_classes.tcc \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/system_error \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/error_constants.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/streambuf \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/streambuf.tcc \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/basic_ios.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/locale_facets.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/cwctype \
+ /usr/include/wctype.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/ctype_base.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/streambuf_iterator.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/locale_facets.tcc \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/basic_ios.tcc \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/ostream \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/ostream.tcc \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/istream.tcc \
+ /storage/packages/gcc/8.1/include/c++/8.1.0/bits/sstream.tcc \
+ src/libmasa/../masanet/MasaNetStatus.hpp \
+ src/libmasa/../masanet/../libmasa/libmasaTypes.hpp \
+ src/libmasa/../masanet/Peer.hpp \
+ src/libmasa/../masanet/command/Command.hpp \
+ src/libmasa/../masanet/command/../Peer.hpp \
+ src/libmasa/../masanet/../common/exceptions/IOException.hpp \
+ src/libmasa/../masanet/MasaNetCallbacks.hpp \
+ src/libmasa/../masanet/PeerList.hpp src/libmasa/../config.h
+
+/usr/include/stdc-predef.h:
+
+src/libmasa/libmasa.hpp:
+
+src/libmasa/libmasaTypes.hpp:
+
+src/libmasa/IManager.hpp:
+
+src/libmasa/Partition.hpp:
+
+src/libmasa/IAligner.hpp:
+
+/usr/include/string.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+src/libmasa/parameters/AbstractAlignerParameters.hpp:
+
+/usr/include/getopt.h:
+
+src/libmasa/parameters/../IAlignerParameter.hpp:
+
+src/libmasa/capabilities.hpp:
+
+src/libmasa/Grid.hpp:
+
+src/libmasa/IAlignerParameter.hpp:
+
+src/libmasa/aligners/AbstractAligner.hpp:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/string:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/c++config.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stringfwd.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/memoryfwd.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/char_traits.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_algobase.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/functexcept.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/exception_defines.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/cpp_type_traits.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/ext/type_traits.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/ext/numeric_traits.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_pair.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/move.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/concept_check.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/type_traits:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_iterator_base_types.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_iterator_base_funcs.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/debug/assertions.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_iterator.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/ptr_traits.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/debug/debug.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/predefined_ops.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/postypes.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/cwchar:
+
+/usr/include/bits/wchar.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/cstdint:
+
+/storage/packages/gcc/8.1/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/allocator.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/ext/new_allocator.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/new:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/exception:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/exception.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/exception_ptr.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/cxxabi_init_exception.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/typeinfo:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/hash_bytes.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/nested_exception.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/localefwd.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/iosfwd:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/ostream_insert.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/cxxabi_forced.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_function.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/backward/binders.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/range_access.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/initializer_list:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/basic_string.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/ext/atomicity.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/gthr.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/ext/alloc_traits.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/alloc_traits.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/ext/string_conversions.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/std_abs.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/cstdio:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/cerrno:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/functional_hash.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/basic_string.tcc:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/map:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_tree.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/ext/aligned_buffer.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_map.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/tuple:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/utility:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_relops.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/array:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/stdexcept:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/uses_allocator.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/invoke.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_multimap.h:
+
+src/libmasa/aligners/../IManager.hpp:
+
+src/libmasa/aligners/../Partition.hpp:
+
+src/libmasa/aligners/../IAligner.hpp:
+
+src/libmasa/aligners/../Grid.hpp:
+
+src/libmasa/aligners/../pruning/AbstractBlockPruning.hpp:
+
+src/libmasa/aligners/../pruning/../libmasaTypes.hpp:
+
+src/libmasa/aligners/../pruning/../Grid.hpp:
+
+src/libmasa/aligners/../pruning/../IManager.hpp:
+
+src/libmasa/aligners/AbstractBlockAligner.hpp:
+
+src/libmasa/aligners/AbstractAligner.hpp:
+
+src/libmasa/aligners/../parameters/BlockAlignerParameters.hpp:
+
+src/libmasa/aligners/../parameters/AbstractAlignerParameters.hpp:
+
+src/libmasa/aligners/../processors/AbstractBlockProcessor.hpp:
+
+src/libmasa/aligners/../processors/../libmasaTypes.hpp:
+
+src/libmasa/aligners/../pruning/BlockPruningGenericN2.hpp:
+
+src/libmasa/aligners/../pruning/AbstractBlockPruning.hpp:
+
+src/libmasa/aligners/AbstractDiagonalAligner.hpp:
+
+src/libmasa/aligners/../libmasa.hpp:
+
+src/libmasa/aligners/../pruning/BlockPruningDiagonal.hpp:
+
+src/libmasa/aligners/AbstractAlignerSafe.hpp:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/queue:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/deque:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_construct.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_uninitialized.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_deque.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/deque.tcc:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/vector:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_vector.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_bvector.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/vector.tcc:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_heap.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_queue.h:
+
+src/libmasa/processors/AbstractBlockProcessor.hpp:
+
+src/libmasa/processors/CPUBlockProcessor.hpp:
+
+src/libmasa/processors/AbstractBlockProcessor.hpp:
+
+src/libmasa/processors/../libmasa.hpp:
+
+src/libmasa/utils/AlignerUtils.hpp:
+
+src/libmasa/utils/../libmasa.hpp:
+
+src/libmasa/pruning/AbstractBlockPruning.hpp:
+
+src/libmasa/pruning/BlockPruningDiagonal.hpp:
+
+src/libmasa/pruning/BlockPruningGenericN2.hpp:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/stdlib.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/signum.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+src/libmasa/../common/Common.hpp:
+
+src/libmasa/../common/exceptions/exceptions.hpp:
+
+src/libmasa/../common/exceptions/IllegalArgumentException.hpp:
+
+src/libmasa/../common/AlignerManager.hpp:
+
+src/libmasa/../common/../libmasa/libmasa.hpp:
+
+src/libmasa/../common/biology/Sequence.hpp:
+
+src/libmasa/../common/biology/Constants.hpp:
+
+src/libmasa/../common/biology/SequenceInfo.hpp:
+
+src/libmasa/../common/biology/SequenceData.hpp:
+
+src/libmasa/../common/biology/SequenceModifiers.hpp:
+
+src/libmasa/../common/io/CellsReader.hpp:
+
+src/libmasa/../common/io/../../libmasa/libmasaTypes.hpp:
+
+src/libmasa/../common/io/../../libmasa/IManager.hpp:
+
+src/libmasa/../common/io/CellsWriter.hpp:
+
+src/libmasa/../common/sra/SpecialRowsPartition.hpp:
+
+src/libmasa/../common/sra/SpecialRow.hpp:
+
+src/libmasa/../common/sra/../io/SeekableCellsReader.hpp:
+
+src/libmasa/../common/sra/../io/CellsReader.hpp:
+
+src/libmasa/../common/sra/../io/CellsWriter.hpp:
+
+src/libmasa/../common/sra/../../libmasa/libmasa.hpp:
+
+src/libmasa/../common/sra/FirstRow.hpp:
+
+src/libmasa/../common/BlocksFile.hpp:
+
+src/libmasa/../common/../libmasa/Grid.hpp:
+
+src/libmasa/../common/BestScoreList.hpp:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/set:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_set.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/stl_multiset.h:
+
+src/libmasa/../common/Job.hpp:
+
+src/libmasa/../common/SpecialRowReader.hpp:
+
+src/libmasa/../common/SpecialRowWriter.hpp:
+
+src/libmasa/../common/CrosspointsFile.hpp:
+
+src/libmasa/../common/Crosspoint.hpp:
+
+src/libmasa/../common/biology/Alignment.hpp:
+
+src/libmasa/../common/biology/AlignmentParams.hpp:
+
+src/libmasa/../common/biology/Sequence.hpp:
+
+src/libmasa/../common/biology/biology.hpp:
+
+src/libmasa/../common/biology/Alignment.hpp:
+
+src/libmasa/../common/biology/AlignmentBinaryFile.hpp:
+
+src/libmasa/../common/sra/SpecialRowsArea.hpp:
+
+src/libmasa/../common/sra/SpecialRowsPartition.hpp:
+
+src/libmasa/../common/configs/Configs.hpp:
+
+src/libmasa/../common/configs/ConfigParser.hpp:
+
+src/libmasa/../common/AlignerPool.hpp:
+
+src/libmasa/../common/../libmasa/libmasaTypes.hpp:
+
+src/libmasa/../common/Timer.hpp:
+
+/usr/include/sys/time.h:
+
+src/libmasa/../common/RecurrentTimer.hpp:
+
+src/libmasa/../common/Status.hpp:
+
+src/libmasa/../common/macros.hpp:
+
+src/libmasa/../common/sra/sra.hpp:
+
+src/libmasa/../common/sra/SpecialRowsArea.hpp:
+
+src/libmasa/../common/utils.hpp:
+
+src/libmasa/../stage1/sw_stage1.h:
+
+src/libmasa/../stage2/sw_stage2.h:
+
+src/libmasa/../stage3/sw_stage3.h:
+
+src/libmasa/../stage4/sw_stage4.h:
+
+src/libmasa/../stage5/sw_stage5.h:
+
+src/libmasa/../stage6/sw_stage6.h:
+
+src/libmasa/../masanet/MasaNet.hpp:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/sstream:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/istream:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/ios:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/ios_base.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/locale_classes.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/locale_classes.tcc:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/system_error:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/streambuf:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/streambuf.tcc:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/basic_ios.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/locale_facets.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/cwctype:
+
+/usr/include/wctype.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/streambuf_iterator.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/locale_facets.tcc:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/basic_ios.tcc:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/ostream:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/ostream.tcc:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/istream.tcc:
+
+/storage/packages/gcc/8.1/include/c++/8.1.0/bits/sstream.tcc:
+
+src/libmasa/../masanet/MasaNetStatus.hpp:
+
+src/libmasa/../masanet/../libmasa/libmasaTypes.hpp:
+
+src/libmasa/../masanet/Peer.hpp:
+
+src/libmasa/../masanet/command/Command.hpp:
+
+src/libmasa/../masanet/command/../Peer.hpp:
+
+src/libmasa/../masanet/../common/exceptions/IOException.hpp:
+
+src/libmasa/../masanet/MasaNetCallbacks.hpp:
+
+src/libmasa/../masanet/PeerList.hpp:
+
+src/libmasa/../config.h:

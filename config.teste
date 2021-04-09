@@ -1,0 +1,12 @@
+GPUS 2
+BREAK 1
+IP 172.17.202.82,172.17.202.82
+PORT 4001,4002
+GPU# 0,1
+BP 1
+SPLIT 1,1
+SEQ  ~/sequences/NC_017186.1.fasta,~/sequences/NC_014318.1.fasta
+WAIT 0
+MODEL dynamic
+PROG ./decision
+GFLOPS 14000,14000
