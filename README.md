@@ -11,12 +11,16 @@ The scripts to execute Static-MultiBP and Dynamic-MultiBP in a SLURM environment
 
 # Deploy instructions
 ./configure
+
 make
+
 ./makemultibp.sh
 
 # Execution instructions (two GPUs in the local computer)
 ./balancer 0 &
+
 ./balancer 1 &
+
 ./controller config.teste
 
 # Diagram
