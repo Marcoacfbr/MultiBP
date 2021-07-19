@@ -43,8 +43,9 @@ using namespace std;
 
 
 #define DEBUG	(0)
+#define DEBUGM   (0)
 #define SYNCTIME (5)
-//#define SHARE (1)
+//#define SHARE (0)
 
 /* Stores a list with the best score and some suboptimal scores */
 static BestScoreList* bestScoreList;
@@ -65,10 +66,14 @@ static SpecialRowsPartition* sraPartition = NULL;
 static BlocksFile* blocksFile;
 
 extern int BestGlobal;
+extern int dynamic;
+extern int lastit;
+extern string wdir;
 extern FILE * dbabp;
 extern FILE * dbbpd;
 extern FILE * dbsta;
-extern FILE * dumpx;
+extern FILE * dbdyn;
+//extern double pruningtime;
 
 Job * jobGlobal; 
 pthread_mutex_t lock;
@@ -198,7 +203,7 @@ static void getBorderCells(Job* job, SpecialRowsPartition* sraPartition,
 		firstColumn = tmp;
 		// XXXXXXXXXXXXXX TODO XXXXXXXXXXXXXXX
 		/*if (sraPartition != NULL) {
-			string filename = sraPartition->getFirstColumnFilename();
+			string filename = sraPartition->getFirstColumnWFilename();
 			firstColumn = new TeeCellsReader(tmp, filename);
 			if (DEBUG) printf("Creating TeeCellsReader\n");
 		} else {
@@ -277,7 +282,21 @@ void * shareScore (void * x ) {
       if (threadrec >  BestGlobal)
         BestGlobal = threadrec;
       pthread_mutex_unlock(&lock);
-
+      //printf ("\n\n --- splitstep: %d - dynamic: %d \n", splitstep, dynamic);
+      if (dynamic != 0) {
+       if (splitstep % dynamic == 0)
+          jobGlobal->getAlignerPool()->dispatchBestScoreDyn(BestGlobal);
+       if (splitstep % dynamic == 1) { 
+      	threadrec = jobGlobal->getAlignerPool()->receiveBestScoreDyn();
+      	//if (DEBUGM) fprintf (dbsta, "BestGlobal: %d *** threadrc: %d  \n", BestGlobal, threadrec);
+      	pthread_mutex_lock(&lock);
+      	if (threadrec >  BestGlobal)
+             BestGlobal = threadrec;
+      	pthread_mutex_unlock(&lock);
+       }
+      }
+      
+     
       sleep(SYNCTIME);
    }
 }
@@ -294,10 +313,13 @@ int stage1(Job* job) {
 	job->getAlignmentParams()->printParams(stats);
 	fflush(stats);
 
-    if (DEBUGM) {
        string dir;
        string filename;
        dir =  job->getWorkPath();
+       wdir =  job->getWorkPath();
+
+
+    if (DEBUGM) {
        //printf ("\n\n *** path: %s *** \n\n", dir.c_str());
        filename = dir + "/DEBUGM_ABP.txt";
        dbabp = fopen(filename.c_str(),"wt");
@@ -307,15 +329,12 @@ int stage1(Job* job) {
        //dbsta = fopen(filename.c_str(),"wt");
     }
 
-    if (DUMP) {
-       string dir;
-       string filename;
-       dir =  job->getWorkPath();
-       //printf ("\n\n *** path: %s *** \n\n", dir.c_str());
-       filename = dir + "/DUMP.txt";
-       dumpx = fopen(filename.c_str(),"wt");
-    }
-
+    /* if (dynamic != 0) 
+       if (splitstep%dynamic == 1) {
+          filename = dir + "/dyn.txt";
+          //dbdyn = fopen(filename.c_str(),"wt");
+       }
+   */
 
     BestGlobal = 0;
     pthread_t thr;
@@ -459,11 +478,13 @@ int stage1(Job* job) {
 	sra->createSplittedPartitions(i0, j0, i1, j1, ni, nj,
 			firstRow, firstColumn, lastRow,	lastColumn);
 
-
+        lastit = 0;
 	logger->start(2.0);
 	vector<SpecialRowsPartition*> sortedPartitions = sra->getSortedPartitions();
 	for(vector<SpecialRowsPartition*>::iterator it = sortedPartitions.begin(); it != sortedPartitions.end(); ++it) {
 		//printf(">>>>> %d,%d,%d,%d\n", (*it)->getI0(), (*it)->getJ0(), (*it)->getI1(), (*it)->getJ1());
+                if (std::next(it) == sortedPartitions.end())
+			lastit = 1;
 		sw->setBestScoreList(bestScoreList, job->alignment_end);
 		if (job->alignment_end == AT_SEQUENCE_1 && (*it)->getI1() != ii1) {
 			sw->setBestScoreList(bestScoreList, AT_NOWHERE);
@@ -490,9 +511,9 @@ int stage1(Job* job) {
 	logger->stop();
 	delete logger;
 
-         if (SHARE)
-           if ((job->split) && (job->block_pruning)) 
-             pthread_cancel(thr);
+         if ((SHARE) && (dynamic != 0))
+            if ((job->split) && (job->block_pruning))
+                pthread_cancel(thr);
 
     if (DEBUGM) {
        fflush(dbabp);
@@ -502,11 +523,12 @@ int stage1(Job* job) {
        //fflush(dbsta);
        //fclose(dbsta);
     }
-     
     
-    if (DUMP) {
-       fflush(dumpx);
-       fclose(dumpx);
+    if (dynamic != 0) {
+            string filenamedyn = wdir + "/dynend.txt";
+            dbdyn = fopen(filenamedyn.c_str(),"wt");
+            fprintf(dbdyn,"END");
+            fclose (dbdyn);
     }
 
 
@@ -567,6 +589,8 @@ int stage1(Job* job) {
 	//delete specialRowWriter;
 	
 	fclose(stats);
+//
+        //printf ("\n\n Pruning time: %f \n\n", pruningtime);
 
 	if (job->getAlignerPool() != NULL) {
 		crosspoint_t c;
